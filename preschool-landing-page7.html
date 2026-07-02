@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preschool Daycare Programs for Young Children in Edmonton</title>
+<style>
+:root{
+  --cream:#FFF8EF;
+  --cream-2:#FFF1DC;
+  --ink:#2B2118;
+  --ink-soft:#6B5D4F;
+  --coral:#FF6F59;
+  --coral-dark:#E2503B;
+  --teal:#2FA39A;
+  --sun:#FFC857;
+  --berry:#8C5BD6;
+  --radius:22px;
+  --shadow:0 18px 40px -18px rgba(43,33,24,0.25);
+  font-size:16px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Trebuchet MS','Segoe UI',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.6;
+}
+
+h1,h2,h3{
+  font-family:'Baloo 2','Trebuchet MS',sans-serif;
+  font-weight:800;
+  line-height:1.15;
+  margin:0 0 .6em;
+  letter-spacing:-0.01em;
+}
+
+p{margin:0 0 1em;color:var(--ink-soft);}
+
+a{color:inherit;text-decoration:none;}
+ul{margin:0;padding:0;list-style:none;}
+
+.section-inner{
+  max-width:1140px;
+  margin:0 auto;
+  padding:6rem 1.5rem;
+}
+
+.eyebrow{
+  display:inline-block;
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.04em;
+  color:var(--coral-dark);
+  background:#FFE2DA;
+  padding:.5em 1.2em;
+  border-radius:999px;
+  margin-bottom:1.2em;
+  border:1px solid rgba(226,80,59,.15);
+}
+
+.section-head{
+  max-width:640px;
+  margin:0 auto 3.5rem;
+  text-align:center;
+}
+.section-head h2{font-size:clamp(1.8rem,3vw,2.4rem);}
+.section-head p{font-size:1.05rem;}
+
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.95em 1.8em;
+  border-radius:999px;
+  font-weight:700;
+  font-size:.98rem;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+  border:2px solid transparent;
+}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 12px 24px -10px rgba(226,80,59,.6);}
+.btn-primary:hover{transform:translateY(-3px);background:var(--coral-dark);}
+.btn-ghost{border-color:var(--ink);color:var(--ink);}
+.btn-ghost:hover{transform:translateY(-3px);background:var(--ink);color:#fff;}
+.btn-light{background:#fff;color:var(--coral-dark);}
+.btn-light:hover{transform:translateY(-3px);}
+.btn-outline{border-color:#fff;color:#fff;}
+.btn-outline:hover{transform:translateY(-3px);background:#fff;color:var(--coral-dark);}
+
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;}
+
+/* HERO */
+.hero{
+  background:linear-gradient(180deg,var(--cream-2),var(--cream));
+  padding-top:3rem;
+  overflow:hidden;
+}
+.hero-inner{
+  max-width:1140px;
+  margin:0 auto;
+  padding:3rem 1.5rem 5rem;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:3rem;
+  align-items:center;
+}
+.hero-copy h1{font-size:clamp(2.2rem,4.4vw,3.4rem);}
+.hero-sub{font-size:1.15rem;max-width:46ch;}
+
+.hero-art{position:relative;min-height:380px;}
+.blob{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 30% 30%, var(--sun), transparent 60%),
+             radial-gradient(circle at 70% 70%, var(--teal), transparent 55%),
+             radial-gradient(circle at 50% 50%, var(--coral), transparent 70%);
+  opacity:.35;
+  border-radius:48% 52% 60% 40% / 50% 45% 55% 50%;
+  filter:blur(2px);
+}
+.hero-card{
+  position:absolute;
+  background:#fff;
+  border-radius:18px;
+  padding:.9em 1.2em;
+  font-weight:700;
+  box-shadow:var(--shadow);
+  animation:float 6s ease-in-out infinite;
+}
+.card-1{top:8%;left:6%;animation-delay:0s;}
+.card-2{top:42%;right:2%;animation-delay:1.2s;}
+.card-3{bottom:6%;left:22%;animation-delay:2.4s;}
+@keyframes float{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-14px);}
+}
+
+/* ABOUT */
+.about-centered{
+  max-width:780px;
+  margin:0 auto;
+  text-align:center;
+}
+.about-centered h2{font-size:clamp(1.9rem,3.2vw,2.5rem);}
+.about-centered p{font-size:1.05rem;}
+.about-pills{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.4rem;
+  margin-top:2.5rem;
+  text-align:left;
+}
+.pill{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:.9rem;
+  background:#fff;
+  border-radius:18px;
+  padding:1.8rem 1.6rem;
+  box-shadow:var(--shadow);
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.pill:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 48px -16px rgba(43,33,24,0.3);
+}
+.pill-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:50px;height:50px;
+  border-radius:14px;
+  background:#E4F4F2;
+  color:var(--teal);
+  transition:transform .28s ease, background .28s ease, color .28s ease;
+}
+.pill-icon svg{width:22px;height:22px;}
+.pill:hover .pill-icon{
+  transform:scale(1.1) rotate(-4deg);
+  background:var(--teal);
+  color:#fff;
+}
+.pill h3{font-size:1.05rem;margin-bottom:.2em;}
+.pill p{margin:0;font-size:.95rem;}
+
+/* WORRIES */
+.worries{background:var(--cream-2);}
+.worry-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.4rem;
+}
+.worry-card{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:2.2rem 1.8rem;
+  box-shadow:var(--shadow);
+  border-top:none;
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.worry-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 48px -16px rgba(43,33,24,0.3);
+}
+.worry-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:52px;height:52px;
+  border-radius:14px;
+  background:#FFE2DA;
+  font-size:1.4rem;
+  margin-bottom:1.2rem;
+  transition:transform .28s ease, background .28s ease;
+}
+.worry-card:hover .worry-icon{
+  transform:scale(1.1) rotate(-4deg);
+  background:var(--coral);
+}
+.worry-card h3{font-size:1.08rem;margin-bottom:.9em;}
+.worry-divider{
+  display:block;
+  width:36px;
+  height:2px;
+  background:#E7DFD3;
+  margin-bottom:.9rem;
+}
+.worry-card p{
+  margin:0;
+  display:flex;
+  align-items:center;
+  gap:.5em;
+}
+.worry-check{
+  flex:none;
+  width:18px;height:18px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:#E4F4F2;
+  color:var(--teal);
+  font-size:.7rem;
+  font-weight:800;
+}
+
+/* FEATURES */
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1.4rem;
+}
+.feature-card{
+  text-align:left;
+  background:#fff;
+  border-radius:18px;
+  padding:1.8rem 1.6rem;
+  box-shadow:var(--shadow);
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.feature-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 48px -16px rgba(43,33,24,0.3);
+}
+.feature-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:52px;height:52px;
+  border-radius:14px;
+  background:#E4F4F2;
+  color:var(--teal);
+  margin-bottom:1.2rem;
+  transition:transform .28s ease, background .28s ease, color .28s ease;
+}
+.feature-icon svg{width:24px;height:24px;}
+.feature-card:hover .feature-icon{
+  transform:scale(1.1) rotate(-4deg);
+  background:var(--teal);
+  color:#fff;
+}
+.feature-card h3{font-size:1.05rem;}
+.feature-card p{margin:0;font-size:.93rem;}
+
+/* PROGRAMS */
+.programs{background:var(--cream-2);}
+.programs-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:3.5rem;
+  align-items:center;
+}
+.programs-visual{
+  position:relative;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  aspect-ratio:4/3;
+}
+.programs-visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.programs-visual:hover img{transform:scale(1.06);}
+.check-list{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.5rem;margin-top:1.6rem;}
+.check-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:.7em;
+  color:var(--ink-soft);
+  font-size:.98rem;
+}
+.check-bubble{
+  flex:none;
+  width:22px;height:22px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:#FFE2DA;
+  color:var(--coral-dark);
+  font-size:.7rem;
+  font-weight:800;
+  margin-top:.15em;
+  transition:transform .25s ease, background .25s ease, color .25s ease;
+}
+.check-list li:hover .check-bubble{
+  transform:scale(1.15);
+  background:var(--coral);
+  color:#fff;
+}
+
+/* APPROACH */
+.pillar-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1.4rem;
+}
+.pillar-card{
+  position:relative;
+  background:#fff;
+  border-radius:18px;
+  padding:2.4rem 1.5rem 1.8rem;
+  box-shadow:var(--shadow);
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.pillar-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 48px -16px rgba(43,33,24,0.3);
+}
+.pillar-badge{
+  position:absolute;
+  top:-14px;
+  left:1.5rem;
+  background:var(--coral);
+  color:#fff;
+  font-size:.75rem;
+  font-weight:700;
+  padding:.35em 1em;
+  border-radius:999px;
+  box-shadow:0 8px 16px -6px rgba(226,80,59,.55);
+  transition:transform .28s ease, background .28s ease;
+}
+.pillar-card:hover .pillar-badge{
+  transform:translateY(-3px);
+  background:var(--coral-dark);
+}
+.pillar-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:52px;height:52px;
+  border-radius:14px;
+  background:#E4F4F2;
+  color:var(--teal);
+  margin:.6rem 0 1.2rem;
+  transition:transform .28s ease, background .28s ease, color .28s ease;
+}
+.pillar-icon svg{width:24px;height:24px;}
+.pillar-card:hover .pillar-icon{
+  transform:scale(1.1) rotate(-4deg);
+  background:var(--teal);
+  color:#fff;
+}
+.pillar-card h3{font-size:1.05rem;}
+.pillar-card p{margin:0;font-size:.93rem;}
+
+/* WHY */
+.why{background:var(--cream-2);}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1.4rem;
+}
+.why-card{
+  display:flex;
+  align-items:flex-start;
+  gap:1.1rem;
+  background:#fff;
+  border-radius:18px;
+  padding:1.6rem 1.7rem;
+  box-shadow:var(--shadow);
+  border-left:none;
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.why-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 24px 48px -16px rgba(43,33,24,0.3);
+}
+.why-icon{
+  flex:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:50px;height:50px;
+  border-radius:14px;
+  background:#FFE2DA;
+  color:var(--coral-dark);
+  transition:transform .28s ease, background .28s ease, color .28s ease;
+}
+.why-icon svg{width:22px;height:22px;}
+.why-card:hover .why-icon{
+  transform:scale(1.1) rotate(-4deg);
+  background:var(--coral);
+  color:#fff;
+}
+.why-card h3{font-size:1.02rem;margin-bottom:.3em;}
+.why-card p{margin:0;font-size:.93rem;}
+
+/* TESTIMONIALS */
+.testimonial-track{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.4rem;
+}
+.testimonial-card{
+  background:#fff;
+  border-radius:18px;
+  padding:2rem;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.testimonial-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 48px -16px rgba(43,33,24,0.3);
+}
+.stars{
+  color:var(--coral);
+  font-size:1.05rem;
+  letter-spacing:.15em;
+  margin-bottom:1rem;
+  transition:transform .28s ease;
+}
+.testimonial-card:hover .stars{transform:scale(1.08);}
+.testimonial-divider{
+  display:block;
+  height:1px;
+  background:#EDE5D8;
+  margin:1.4rem 0 1.2rem;
+}
+.testimonial-card p{font-style:italic;color:var(--ink);margin:0;}
+.testimonial-author{display:flex;flex-direction:column;}
+.testimonial-author strong{font-size:.98rem;}
+.testimonial-author span{font-size:.85rem;color:var(--ink-soft);}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,var(--coral),var(--coral-dark));
+  color:#fff;
+}
+.cta-inner{text-align:center;max-width:640px;}
+.cta h2{color:#fff;font-size:clamp(1.7rem,3vw,2.3rem);}
+.cta p{color:rgba(255,255,255,.9);}
+.cta .hero-actions{justify-content:center;}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:0 auto;display:grid;gap:1rem;}
+.faq-item{
+  background:#fff;
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.faq-question{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:1.3rem 1.6rem;
+  font-family:inherit;
+  font-size:1.02rem;
+  font-weight:700;
+  color:var(--ink);
+  text-align:left;
+}
+.faq-icon{
+  flex:none;
+  width:28px;height:28px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:var(--cream-2);
+  color:var(--coral-dark);
+  font-weight:800;
+  transition:transform .25s ease, background .25s ease;
+}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--coral);color:#fff;}
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .3s ease, padding .3s ease;
+  padding:0 1.6rem;
+}
+.faq-answer p{margin:0 0 1.4rem;}
+.faq-item.open .faq-answer{max-height:240px;}
+
+/* RESPONSIVE */
+@media (max-width:960px){
+  .hero-inner,.programs-grid{grid-template-columns:1fr;}
+  .hero-art{order:-1;min-height:260px;}
+  .about-pills{grid-template-columns:1fr 1fr;}
+  .worry-grid,.feature-grid,.pillar-grid,.why-grid,.testimonial-track{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:600px){
+  .section-inner{padding:4rem 1.25rem;}
+  .about-pills{grid-template-columns:1fr;}
+  .worry-grid,.feature-grid,.pillar-grid,.why-grid,.testimonial-track{grid-template-columns:1fr;}
+  .hero-actions{flex-direction:column;align-items:stretch;}
+  .btn{width:100%;}
+}
+
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Serving Families in Edmonton</span>
+        <h1>Preschool Daycare Programs for Young Children in Edmonton</h1>
+        <p class="hero-sub">Loving care, hands-on learning, and a warm community help children feel safe, happy, and confident every single day.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Enroll Now</a>
+          <a href="#contact" class="btn btn-ghost">Book a Visit</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="hero-card card-1">🧩 Sensory Play</div>
+        <div class="hero-card card-2">🎨 Creative Art</div>
+        <div class="hero-card card-3">🌳 Outdoor Time</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner about-centered">
+      <span class="eyebrow">About Our Program</span>
+      <h2>Where Every Child Feels Seen, Safe and Celebrated</h2>
+      <p>Our preschool daycare program blends play, structure, and caring support to build each child's emotional, social, and learning skills. Every part of the day focuses on your child's comfort and steady growth.</p>
+      <p>From the moment your child arrives, they meet friendly educators, welcoming spaces, and activities matched to their age. Parents leave with confidence, knowing their child is in safe, skilled hands at Edmonton Kids Learning Daycare &amp; OSC.</p>
+
+      <div class="about-pills">
+        <div class="pill">
+          <span class="pill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <div>
+            <h3>Safe Environment</h3>
+            <p>Secure, supervised areas with strong safety practices.</p>
+          </div>
+        </div>
+        <div class="pill">
+          <span class="pill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/></svg>
+          </span>
+          <div>
+            <h3>Experienced Staff</h3>
+            <p>Trained, caring early childhood educators guide each child.</p>
+          </div>
+        </div>
+        <div class="pill">
+          <span class="pill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1 4 2 .5-1 2-2 4-2 4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9z"/></svg>
+          </span>
+          <div>
+            <h3>Holistic Learning</h3>
+            <p>Programs that support full child development every day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WE UNDERSTAND -->
+  <section class="worries" id="worries">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">We Understand</span>
+        <h2>We Understand What Parents Worry About</h2>
+        <p>Choosing preschool daycare is a big step; we ease concerns with clear care, safe systems, and daily support you can trust.</p>
+      </div>
+
+      <div class="worry-grid">
+        <div class="worry-card">
+          <span class="worry-icon">🛡️</span>
+          <h3>Worried about your child's safety?</h3>
+          <span class="worry-divider"></span>
+          <p><span class="worry-check">✓</span>Secure access and constant supervision.</p>
+        </div>
+        <div class="worry-card">
+          <span class="worry-icon">📖</span>
+          <h3>Concerned about learning quality?</h3>
+          <span class="worry-divider"></span>
+          <p><span class="worry-check">✓</span>Guided, hands-on skill development.</p>
+        </div>
+        <div class="worry-card">
+          <span class="worry-icon">❤️</span>
+          <h3>Adjustment worries?</h3>
+          <span class="worry-divider"></span>
+          <p><span class="worry-check">✓</span>Calm, gentle transition routines.</p>
+        </div>
+        <div class="worry-card">
+          <span class="worry-icon">🕐</span>
+          <h3>Busy schedule?</h3>
+          <span class="worry-divider"></span>
+          <p><span class="worry-check">✓</span>Flexible drop-off &amp; pick-up.</p>
+        </div>
+        <div class="worry-card">
+          <span class="worry-icon">🍎</span>
+          <h3>Nutrition concerns?</h3>
+          <span class="worry-divider"></span>
+          <p><span class="worry-check">✓</span>Fresh, balanced meals.</p>
+        </div>
+        <div class="worry-card">
+          <span class="worry-icon">🙂</span>
+          <h3>Child happiness?</h3>
+          <span class="worry-divider"></span>
+          <p><span class="worry-check">✓</span>Daily updates &amp; caring staff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Key Features</span>
+        <h2>Everything Your Child Needs to Flourish</h2>
+        <p>Our preschool daycare offers safe, fun learning and friendships.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>Safe Spaces</h3>
+          <p>Secure, child-friendly areas monitored all day.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/></svg>
+          </span>
+          <h3>Qualified Educators</h3>
+          <p>Certified staff focused on early growth.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6a2 2 0 114 0c0 1-1 1.5-1 2.5h2.5a1.5 1.5 0 010 3H18c1 0 1.5 1 2.5 1a2 2 0 11-2 2c0-1 1-1.5 1-2.5v2.5a1.5 1.5 0 01-3 0V18c0 1-1 1.5-2 1.5a2 2 0 110-4c1 0 1.5 1 2.5 1v-2.5h-2.5c1 0 1.5-1 1.5-2H14v2.5a1.5 1.5 0 01-3 0V12c0-1-1-1.5-1-2.5a2 2 0 112-2c1 0 1.5 1 2.5 1V6z"/></svg>
+          </span>
+          <h3>Play-Based Learning</h3>
+          <p>Activities designed for natural learning.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l4 7H8l4-7z"/><path d="M12 9l5 8H7l5-8z"/><path d="M12 17v4"/></svg>
+          </span>
+          <h3>Outdoor Time</h3>
+          <p>Daily safe outdoor play.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs" id="programs">
+    <div class="section-inner programs-grid">
+      <div class="programs-visual">
+        <img src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Teacher reading a book to preschool children" loading="lazy">
+      </div>
+      <div class="programs-copy">
+        <span class="eyebrow">Our Programs</span>
+        <h2>Hands-On Learning That Sparks Curiosity</h2>
+        <p>Our hands-on learning approach turns simple moments into real growth. Children build skills, confidence, and creativity through guided activities.</p>
+        <ul class="check-list">
+          <li><span class="check-bubble">✓</span>Sensory and motor skill activities</li>
+          <li><span class="check-bubble">✓</span>Early literacy and storytelling</li>
+          <li><span class="check-bubble">✓</span>Numbers, shapes, and problem-solving</li>
+          <li><span class="check-bubble">✓</span>Music, movement, and creativity</li>
+          <li><span class="check-bubble">✓</span>Social interaction and group learning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach" id="approach">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Our Approach</span>
+        <h2>A Whole-Child Learning Approach</h2>
+        <p>We support every stage of development so your child grows with confidence, kindness, and strong ability.</p>
+      </div>
+
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <span class="pillar-badge">Pillar 1</span>
+          <span class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5c2-1.2 4.3-1.5 6.5-.7C10 4.8 11 6 12 6s2-1.2 3.5-1.7C17.7 3.5 20 3.8 22 5v13c-2-1.2-4.3-1.5-6.5-.7C14 17.8 13 19 12 19s-2-1.2-3.5-1.7C6.3 16.5 4 16.8 2 18V5z"/><path d="M12 6v13"/></svg>
+          </span>
+          <h3>Hands-On Learning</h3>
+          <p>Activity-based understanding.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-badge">Pillar 2</span>
+          <span class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-3 2.7-5 6-5s6 2 6 5"/><path d="M15.5 14.3c2.6.3 4.5 2 4.5 4.7"/></svg>
+          </span>
+          <h3>Social Development</h3>
+          <p>Friendships &amp; sharing.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-badge">Pillar 3</span>
+          <span class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 100 18c1 0 1.8-.8 1.8-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8H17a4 4 0 004-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="9.5" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/><circle cx="16.5" cy="11.5" r="1"/></svg>
+          </span>
+          <h3>Creative Play</h3>
+          <p>Art &amp; imagination.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-badge">Pillar 4</span>
+          <span class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+          </span>
+          <h3>Physical Activity</h3>
+          <p>Active healthy play.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why" id="why">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Why Parents Choose Us</h2>
+        <p>Families trust Edmonton Kids Learning Daycare &amp; OSC because we focus on safe care, real learning, and happy children.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <div>
+            <h3>Safe &amp; Secure Environment</h3>
+            <p>Controlled access and trained supervision at all times.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/></svg>
+          </span>
+          <div>
+            <h3>Qualified, Caring Staff</h3>
+            <p>Experienced educators who support each child's growth.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 100 18c1 0 1.8-.8 1.8-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8H17a4 4 0 004-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="9.5" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/><circle cx="16.5" cy="11.5" r="1"/></svg>
+          </span>
+          <div>
+            <h3>Engaging Learning Methods</h3>
+            <p>Play-based programs that deliver real results.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 13.5s1.5 2 3.5 2 3.5-2 3.5-2"/><path d="M9 9h.01M15 9h.01"/></svg>
+          </span>
+          <div>
+            <h3>Focus on Child Happiness</h3>
+            <p>We support emotional well-being every day.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1 4 2 .5-1 2-2 4-2 4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9z"/></svg>
+          </span>
+          <div>
+            <h3>Healthy Meals &amp; Snacks</h3>
+            <p>Fresh food prepared to meet dietary needs.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H7l-3 3V5z"/></svg>
+          </span>
+          <div>
+            <h3>Open Parent Communication</h3>
+            <p>Daily updates and easy parent access to staff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Parent Stories</span>
+        <h2>Loved by Families Like Yours</h2>
+      </div>
+
+      <div class="testimonial-track">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"My son runs into class each morning. The educators show real care, and daily updates give me peace of mind."</p>
+          <span class="testimonial-divider"></span>
+          <div class="testimonial-author">
+            <strong>Sarah M.</strong>
+            <span>Parent</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"We visited many preschools, but none felt as welcoming and organised. Ava has grown so much in a short time."</p>
+          <span class="testimonial-divider"></span>
+          <div class="testimonial-author">
+            <strong>James &amp; Priya R.</strong>
+            <span>Parents of Ava</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Flexible hours, healthy meals, and a team that treats my children with care. I feel confident every day."</p>
+          <span class="testimonial-divider"></span>
+          <div class="testimonial-author">
+            <strong>Emily T.</strong>
+            <span>Mother of two</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="section-inner cta-inner">
+      <h2>Give Your Child a Joyful Start to Learning</h2>
+      <p>Schedule a visit today and see why families trust us with their children.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-light">Enroll Now</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common Parent Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What ages do you accept?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We welcome children from 2.5 to 6 years old, with programs grouped by age so activities match each child's stage of development.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What are your operating hours?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We're open Monday to Friday, 7:00 AM to 6:00 PM, with flexible drop-off and pick-up windows to fit busy family schedules.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do you keep children safe?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our centre uses secure access controls, constant staff supervision, and clear safety routines so every child stays protected throughout the day.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What kind of meals do you provide?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We serve fresh, balanced meals and snacks each day, and can accommodate common dietary needs and allergies with advance notice.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How will I know my child's progress?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Educators share daily updates and regular progress notes, so you always have a clear picture of how your child is growing and learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      faqItems.forEach(other => {
+        other.classList.remove('open');
+        other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        question.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+
+</script>
+</body>
+</html>
